@@ -1,0 +1,404 @@
+/* TOÀN BỘ TRANG */
+body {
+    background-color: #fff9db;
+    color: #f1f1f1;
+    font-family: 'Dancing Script';font-size: 22px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2, h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* HEADER */
+  .navbar {
+    font-family: 'Dancing Script';font-size: 22px;
+    background-color: hsl(59, 48%, 61%) !important;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .navbar-brand img {
+    filter: drop-shadow(0 0 5px #fff);
+  }
+  
+  .nav-link {
+    color:#af061a !important;
+    transition: 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .dropdown-item:hover {
+    color:#af061a !important;
+    transform: scale(1.05);
+  }
+  
+  /* DROPDOWN */
+  .dropdown-menu {
+    border: none;
+    background-color: #1a1a1a;
+  }
+  
+  /* CAROUSEL */
+  .carousel img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(70%) contrast(110%);
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.02);
+  }
+  
+  /* GIỚI THIỆU */
+  .fade-in {
+    animation: fadeInUp 1s ease-in-out both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #gioithieu {
+    background-color: #fff9db; /* Nền vàng nhạt */
+    border-radius: 10px;
+    padding: 2rem;
+    color: #212529; /* Màu chữ mặc định đậm (gần đen) */
+  }
+  #gioithieu h2,
+  #gioithieu h4 {
+    color: #2b2b2b;
+  }
+  
+  #gioithieu p,
+  #gioithieu li {
+    color: #333;
+  }
+  
+  /* Đổi màu gạch ngăn cách từ trắng sang xám nhạt */
+  #gioithieu hr {
+    border-color: #ccc;
+  }
+  
+  /* Đổi màu nút để nổi bật trên nền sáng */
+  #gioithieu a.btn {
+    color: #333;
+    border-color: #333;
+  }
+  
+  #gioithieu a.btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .text-info {
+    color: #0056b3 !important;
+  }
+  
+  /*Member */
+
+  .team-section {
+    background-color: #f4ebd4;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .team-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+  }
+  
+  .team-section h2 i {
+    color: #d86f45;
+    margin-right: 10px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .team-item {
+    text-align: center;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  
+  .team-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  
+  .team-item p {
+    font-size: 15px;
+    color: #666;
+  }
+  
+  
+  /* Contact */
+  .contact-section {
+    background-color: #fff9db; 
+    padding: 60px 20px;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contact-section .container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffffee;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section h2 i {
+    color: #d86f45;
+    margin-right: 10px;
+  }
+  
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fffdf8;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-section form input:focus,
+  .contact-section form textarea:focus {
+    outline: none;
+    border-color: #d86f45;
+    box-shadow: 0 0 0 2px rgba(216, 111, 69, 0.2);
+  }
+  
+  .contact-section form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #d86f45;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .contact-section form button:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px #d86f45;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 576px) {
+    .contact-section {
+      padding: 40px 15px;
+    }
+  
+    .contact-section .container {
+      padding: 30px 20px;
+    }
+  
+    .contact-section h2 {
+      font-size: 22px;
+    }
+  
+    .contact-section form button {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
+  
+  
+  /* FOOTER */
+  footer.footer {
+    background-color: #f4ebd4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0 20px;
+  }
+
+  footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #222;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  footer i {
+    margin-right: 8px;
+    color: #555;
+  }
+
+  .fb-page {
+width: 100% !important;
+max-width: 100% !important;
+min-width: 250px;
+}
+
+
+  .footer .bottom-text {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 500;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .footer .row > div {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+  .plugin-box {
+border: 2px solid #ccc;
+border-radius: 10px;
+background-color: #ffffff;
+padding: 10px;
+}
+  
+    
+  
+  /* ANIMATION KEYFRAMES */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .dev-img {
+      height: 200px;
+    }
+  
+    .carousel img {
+      height: 300px;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .dropdown-menu {
+      text-align: center;
+    }
+  }
+  
+  /* Nút ngôn ngữ */
+.lang-btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    color: #fff;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .lang-btn:hover {
+    background-color: #ffc107;
+    color: #000;
+    border-color: #ffc107;
+  }
+  
+  /* Responsive - hiển thị nút ngôn ngữ bên trong toggle menu khi mobile */
+  @media (max-width: 991.98px) {
+    .lang-btn {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Fade in hiệu ứng vào */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Hiệu ứng hover nút đẹp */
+  .transition-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .transition-hover:hover {
+    background-color: #ffc107;
+    color: #000;
+    border-color: #ffc107;
+    transform: scale(1.05);
+  }
+  
