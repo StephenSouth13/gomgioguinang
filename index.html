@@ -171,11 +171,15 @@
 </script>
 
 
- <!-- LIÊN HỆ -->
+
+<!-- THÔNG BÁO -->
+<div id="form-message" style="display:none; padding: 10px; background: #d4edda; color: #155724; text-align:center;"></div>
+
+<!-- LIÊN HỆ -->
 <section id="lienhe" class="contact-section">
   <div class="container">
     <h2><i class="fas fa-hand-holding-heart"></i> Liên hệ với chúng tôi</h2>
-    <form action="https://formspree.io/f/xgvkabjp" method="POST">
+    <form id="contact-form">
       <input type="text" name="name" placeholder="Tên của bạn" required>
       <input type="email" name="email" placeholder="Email" required>
       <textarea name="message" rows="5" placeholder="Nội dung" required></textarea>
@@ -183,6 +187,36 @@
     </form>
   </div>
 </section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Ngăn reload trang
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xgvkabjp", {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    const messageBox = document.getElementById("form-message");
+
+    if (response.ok) {
+      messageBox.innerText = "Đã gửi tin nhắn thành công!";
+      messageBox.style.display = "block";
+      messageBox.style.background = "#d4edda";
+      messageBox.style.color = "#155724";
+      form.reset(); // Xóa nội dung form
+    } else {
+      messageBox.innerText = "Gửi thất bại. Vui lòng thử lại.";
+      messageBox.style.display = "block";
+      messageBox.style.background = "#f8d7da";
+      messageBox.style.color = "#721c24";
+    }
+  });
+</script>
 
 
 
