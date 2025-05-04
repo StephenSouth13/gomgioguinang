@@ -4,177 +4,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wolf Card - Werewolf Strategy Game</title>
+  <title>Gather Wind, Send Sunshine</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- HEADER -->
+
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand me-3" href="#"><img src="logo.png" alt="Wolf Card Logo" height="40"></a>
-
-        <!-- Language switch -->
-        <a href="index.html" class="btn lang-btn ms-2">SWITCH TO VIETNAMESE</a>
-
-        <!-- Toggle menu mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Main menu -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#gioithieu" role="button" data-bs-toggle="dropdown">ABOUT</a>
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item text-light" href="#y-tuong">Game Concept</a></li>
-                <li><a class="dropdown-item text-light" href="#cach-choi">How to Play</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#dev">DEVELOPERS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lienhe">CONTACT</a></li>
-          </ul>
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand me-3" href="#"><img src="logo.png" alt="Wolf Card Logo" height="40"></a>
+      
+          <!-- Language switch button -->
+          <a href="index.html" class="btn lang-btn ms-2">SWITCH TO ENGLISH</a>
+      
+          <!-- Mobile menu toggle -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Main menu -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#gioithieu" role="button" data-bs-toggle="dropdown">PROJECT</a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-light" href="tram1.html" target="_blank">Station 1</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#dev">PROJECT MEMBERS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#lienhe">CONTACT</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+</div>      
   </header>
-
   <!-- HOME (CAROUSEL) -->
   <section id="home">
     <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="wolfman_by_shikazan-d4tgevm.webp" class="d-block w-100" alt="Image 1">
-        </div>
-        <div class="carousel-item">
-          <img src="108833169_275718500165396_3382281054410585256_n.png" class="d-block w-100" alt="Image 2">
-        </div>
-        <div class="carousel-item">
-          <img src="ma-soi-thumb.jpg" class="d-block w-100" alt="Image 3">
+          <img src="hero.png" class="d-block w-100" alt="Cover image">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="gioithieu" class="container py-5 text-light fade-in">
+ <!-- INTRODUCTION -->
+<section id="gioithieu" class="container py-5 fade-in">
 
-    <!-- Game Concept -->
-    <div id="y-tuong" class="mb-5">
-      <h2><i class="fas fa-lightbulb text-warning me-2"></i>Game Concept 🐺</h2>
-      <p>
-        <strong>Wolf Card</strong> is a strategic card game inspired by the traditional Werewolf game, enhanced with new roles,
-        special mechanics, and diverse gameplay. The game encourages critical thinking, team strategy, and deduction skills in a thrilling and mysterious atmosphere.
-      </p>
-      <!-- More info button -->
-      <div class="text-center mt-4">
-        <a href="introduce.us.html" class="btn btn-outline-light btn-lg rounded-pill shadow-sm transition-hover">
-          🔍 Learn More
-        </a>
-      </div>
-    </div>
-
-    <!-- How to Play -->
-    <div id="cach-choi" class="mb-4">
-      <h2><i class="fas fa-gamepad text-info me-2"></i>How to Play</h2>
-      <p>
-        Players take on secret roles and perform actions at night, then debate and vote during the day to find the hidden enemies among them.
-        The main confrontation is between the Werewolves and Villagers, but the game may also include third-party factions and unique special roles.
-      </p>
-      <!-- More info button -->
-      <div class="text-center mt-4">
-        <a href="play.us.html" class="btn btn-outline-light btn-lg rounded-pill shadow-sm transition-hover">
-          🔍 Learn More
-        </a>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- DEVELOPERS -->
-  <section id="dev" class="bg-dark text-light py-5">
+  <!-- Game idea -->
+  <div id="y-tuong" class="mb-5">
+    <h2><i class="fas fa-lightbulb text-warning me-2"></i>🌬️ Station 1: Gather Wind, Send Sunshine ☀️</h2>
+    <p>
+      <strong>Gather Wind, Send Sunshine</strong> welcomes you to a place that spreads love and positive inspiration.
+      <br> Just a gentle breeze, a warm ray of sunshine... is enough to warm the heart! 💛
+    </p>
     <div class="container">
-      <h2 class="text-center mb-4">👨‍💻 Developers</h2>
-      <div class="row text-center">
+      <p class="lead text-center fade-in">
+        <strong>Welcome to Gather Wind - Send Sunshine</strong> – where we <span class="text-info">collect kind deeds</span>, <span class="text-warning">spread love</span> and <span class="text-success">transmit positive inspiration</span>.
+      </p>
 
-        <!-- Mai Quốc Đăng -->
-        <div class="col-md-4 mb-4">
-          <div class="dev-card">
-            <img src="Dang.png" alt="Mai Quốc Đăng" class="dev-img">
-            <h5 class="mt-3">🐺 Mai Quốc Đăng</h5>
-            <p><i class="fas fa-network-wired"></i> Network Programmer</p>
-            <p><i class="fas fa-users-cog"></i> Multiplayer Designer</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
+      <p class="fade-in delay-1s">
+        <i class="fas fa-wind text-info me-2"></i>Just a <strong>gentle breeze</strong>, a <strong>warm ray of sunshine</strong> can <strong>warm the heart</strong> and <strong>light up hope</strong> in life.
+      </p>
 
-        <!-- Quách Thành Long -->
-        <div class="col-md-4 mb-4">
-          <div class="dev-card">
-            <img src="long.jpg" alt="Quách Thành Long" class="dev-img">
-            <h5 class="mt-3">🧙‍♂️ Quách Thành Long</h5>
-            <p><i class="fas fa-crown"></i> Team Leader</p>
-            <p><i class="fas fa-laptop-code"></i> Developer/Website</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
+      <hr class="border-light my-4">
 
-        <!-- Võ Thành Đạt -->
-        <div class="col-md-4 mb-4">
-          <div class="dev-card">
-            <img src="Dat.png" alt="Võ Thành Đạt" class="dev-img">
-            <h5 class="mt-3">🎨 Võ Thành Đạt</h5>
-            <p><i class="fas fa-user"></i> Member</p>
-            <p><i class="fas fa-pencil-ruler"></i> Developer/Designer</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
+      <h4 class="text-center mb-3 slide-up"><i class="fas fa-hands-helping text-primary me-2"></i><strong>Program Introduction</strong></h4>
+      <p class="fade-in delay-2s">
+        <strong>Gather Wind - Send Sunshine</strong> is a charity program organized by students from <strong>Ho Chi Minh City University of Economics</strong>. 
+        The program includes a series of fundraising activities lasting for <strong>1 month</strong>, aimed at providing <i class="fas fa-gift text-success"></i> material and <i class="fas fa-heart text-danger"></i> spiritual value for students and schools.
+      </p>
 
+      <hr class="border-light my-4">
+
+      <h4 class="text-center mb-3 zoom-in delay-1s"><i class="fas fa-eye text-warning me-2"></i><strong>Vision</strong></h4>
+      <p class="fade-in delay-3s">
+        We hope that the program will become a <strong>reputable and annual charity activity</strong>, <span class="text-info">spreading profound humanitarian values</span> and promoting <span class="text-warning">the spirit of sharing</span> within the student community.
+      </p>
+      <p class="fade-in delay-4s">
+        Not only material contributions, we hope to <strong>provide motivation</strong> and <strong>ignite dreams</strong> for the younger generation.
+      </p>
+
+      <hr class="border-light my-4">
+
+      <h4 class="text-center mb-3 slide-up"><i class="fas fa-bullhorn text-danger me-2"></i><strong>Theme Message</strong></h4>
+      <ul class="list-unstyled text-center fade-in delay-5s">
+        <li><i class="fas fa-heart text-danger me-2"></i> Collect love</li>
+        <li><i class="fas fa-paper-plane text-info me-2"></i> Send hope</li>
+        <li><i class="fas fa-seedling text-success me-2"></i> Spread goodness</li>
+      </ul>
+
+      <div class="text-center mt-4 fade-in delay-6s">
+        <i class="fas fa-sun fa-2x text-warning mx-3"></i>
+        <i class="fas fa-cloud fa-2x text-info mx-3"></i>
+        <i class="fas fa-hand-holding-heart fa-2x text-danger mx-3"></i>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="lienhe" class="contact-section py-5 text-light">
-    <div class="container">
-      <h2 class="text-center spooky-title mb-4"><i class="fas fa-skull-crossbones"></i> Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <div class="text-center">
-          <button type="submit" class="bloody-btn">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </div>
-      </form>
+    <!-- Page switch button -->
+    <div class="text-center mt-4">
+      <a href="tram1.html" class="btn btn-outline-light btn-lg rounded-pill shadow-sm transition-hover">
+        🔍 Learn more
+      </a>
     </div>
-  </section>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-black text-light text-center py-3">
-    <p>&copy; 2025 Wolf Card | Designed by Group 3 - VTC Academy</p>
-  </footer>
+</section>
+
+  
+  
+
+
+<!-- Project members -->
+<section id="dev" class="team-section">
+  <div class="container">
+    <h2><i class="fas fa-users"></i> Project Members</h2>
+    <div class="team-grid">
+      <div class="team-item" data-aos="fade-up">
+        <img src="assets/tram1/member/Ảnh thành viên/3.png" alt="Nguyễn Minh Đoan">
+        <h4>Nguyễn Minh Đoan</h4>
+        <p>Head of Organization</p>
+      </div>
+      <div class="team-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/tram1/member/Ảnh thành viên/1.png" alt="Nguyễn Thị Phương Thảo">
+        <h4>Nguyễn Thị Phương Thảo</h4>
+        <p>Communication</p>
+      </div>
+      <div class="team-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/tram1/member/Ảnh thành viên/2.png" alt="Hồ Thị Anh Thơ">
+        <h4>Hồ Thị Anh Thơ</h4>
+        <p>Events</p>
+      </div>
+      <div class="team-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/tram1/member/Ảnh thành viên/4.png" alt="Huỳnh Ánh Nguyệt">
+        <h4>Huỳnh Ánh Nguyệt</h4>
+        <p>Sponsorship Advocacy</p>
+      </div>
+      <div class="team-item" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/tram1/member/Ảnh thành viên/5.png" alt="Nguyễn Lê Việt Tú">
+        <h4>Nguyễn Lê Việt Tú</h4>
+        <p>Event Content</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+
+<!-- MESSAGE -->
+<div id="form-message" style="display:none; padding: 10px; background: #d4edda; color: #155724; text-align:center;"></div>
+
+<!-- CONTACT -->
+<section id="lienhe" class="contact-section">
+  <div class="container">
+    <h2><i class="fas fa-hand-holding-heart"></i> Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Content" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Prevent page reload
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xgvkabjp", {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    const messageBox = document.getElementById("form-message");
+
+    if (response.ok) {
+      messageBox.innerText = "Message sent successfully!";
+      messageBox.style.display = "block";
+      messageBox.style.background = "#d4edda";
+      messageBox.style.color = "#155724";
+      form.reset(); // Clear form content
+    } else {
+      messageBox.innerText = "Sending failed. Please try again.";
+      messageBox.style.display = "block";
+      messageBox.style.background = "#f8d7da";
+      messageBox.style.color = "#721c24";
+    }
+  });
+</script>
+
+
+
+  
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Contact information -->
+      <div class="col-md-4">
+        <h5>Contact Information</h5>
+        <p><i class="fas fa-envelope"></i>minhdoan1335@gmail.com</p>
+        <p><i class="fas fa-phone"></i>Zalo: 039 525 2806</p>
+        <p><i class="fas fa-map-marker-alt"></i>KDC 13A, Phong Phú Commune, Bình Chánh District, Ho Chi Minh City</p>
+      </div>
+
+      <!-- Column 2: Contributions -->
+      <div class="col-md-4">
+        <h5>Support Contributions</h5>
+        <p><i class="fas fa-box"></i>In-kind: 039 525 2806 (Ms. Doan)</p>
+        <p><i class="fas fa-hand-holding-usd"></i>Cash: 039 525 2806 (Ms. Doan)</p>
+        <p><i class="fas fa-university"></i>Bank: Agribank</p>
+        <p><i class="fas fa-credit-card"></i>Account: 5406205383772</p>
+        <p><i class="fas fa-user"></i>Account holder: Nguyễn Minh Đoan</p>
+      </div>
+
+      <!-- Column 3: Facebook Plugin -->
+      <div class="col-md-4 d-flex justify-content-center align-items-start">
+        <div class="fb-page"
+          data-href="https://www.facebook.com/profile.php?id=61575926483114"
+          data-tabs="timeline"
+          data-width="340"
+          data-height="200"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/profile.php?id=61575926483114" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/profile.php?id=61575926483114" target="_blank">Gather Wind - Send Sunshine</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+      
+
+    <!-- Last line: copyright -->
+    <div class="bottom-text mt-4">
+      © 2025 All Rights Reserved || Designed by Team 5
+    </div>
+  </div>
+</footer>
+
+
+  
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
